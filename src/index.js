@@ -3,4 +3,4 @@ dotenv.config();
 
 import connectdb from "./db/dbconnect.js";
 
-connectdb()
+await connectdb()

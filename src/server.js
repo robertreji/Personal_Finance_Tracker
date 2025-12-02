@@ -13,9 +13,10 @@ server.use(cors({
 
 server.use(cookieParser())
 server.use(express.json())
-server.use(express.urlencoded())
+server.use(express.urlencoded({extended:true}))
 
 server.use("/api/v1/user",userRouter)
+
 
 server.use(ErrorHandler)
 

@@ -12,7 +12,7 @@ await connectdb()
     server.on("error",()=>{
         console.error("unable to conect with the server ...")
     })
-    server.listen(port,()=>{
+    server.listen(port,"0.0.0.0",()=>{
         console.error("server running in port : ",port)
     })
 })
